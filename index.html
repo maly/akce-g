@@ -7,12 +7,13 @@ layout: default
 	<h2><a href=".{{post.url}}" rel="bookmark" title="{{post.title}}">{{post.title}}</a></h2>
 
 	<div class="entry">
+		<small>{{ page.date | date: "%-d %B %Y" }}</small>
 		{{post.description}}
 		{{post.content}}
 	</div>
 	<p class="postmetadata">
-		<a href="{{post.id}}/" title="Read more {{page.title}}">
-			Read more</a>
+		<a href="{{post.id}}/" title="Číst dál a víc {{page.title}}">
+			Číst dál a víc</a>
 	</p>
 </div>
 {% endfor %}
